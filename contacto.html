@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inscríbete o pide información · MEDadvance</title>
+<meta name="description" content="Inscríbete en los cursos de fototerapia de MEDadvance o pide información antes de reservar tu cupo.">
+<link rel="icon" type="image/png" href="assets/img/isotipo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap row">
+    <a class="logo" href="index.html"><img src="assets/img/logo-navy.png" alt="MEDadvance" class="logo-img"></a>
+    <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="cursos.html">Cursos</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html" class="active">Contacto</a>
+      <a href="contacto.html" class="btn btn-grad">Inscríbete</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="kick">Contacto</div>
+    <h1 style="margin-top:12px">Inscríbete o pide <b>información</b></h1>
+    <p class="lead">Elige cómo quieres avanzar: si ya tienes claro tu curso, inscríbete directo; si todavía tienes dudas, escríbenos y te orientamos.</p>
+  </div>
+</section>
+
+<!-- DOS ACCIONES -->
+<section style="padding-top:16px">
+  <div class="wrap">
+    <div class="action-grid">
+
+      <!-- INSCRÍBETE -->
+      <!-- PENDIENTE TÉCNICO: enlazar al formulario de Google que alimenta la planilla Excel. Reemplazar el href de abajo por el link real (coordinar integración con el equipo técnico). -->
+      <div class="action-card primary">
+        <div class="ac-kick">Inscríbete</div>
+        <h3>Reserva tu cupo</h3>
+        <p>Ya decidiste tu curso. Completa el formulario de inscripción y te confirmamos cupo, valor y los pasos siguientes.</p>
+        <a href="#" data-pendiente="formulario-google-inscripcion" class="btn btn-grad">Ir al formulario de inscripción</a>
+      </div>
+
+      <!-- PIDE INFORMACIÓN -->
+      <div class="action-card">
+        <div class="ac-kick">Pide información</div>
+        <h3>Resuelve tus dudas</h3>
+        <p>¿Tienes preguntas antes de inscribirte? Cuéntanos tu especialidad y qué curso te interesa, y te orientamos.</p>
+        <a href="#form-info" class="btn btn-ghost">Escríbenos</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FORMULARIO PIDE INFORMACIÓN -->
+<section id="form-info" class="alt" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head"><h2>Pide <b>información</b></h2><p>Te respondemos con fechas, programa y cupos disponibles.</p></div>
+    <div class="form-grid">
+
+      <!-- FORMULARIO -->
+      <form onsubmit="return false">
+        <div class="panel">
+          <div class="field">
+            <label for="nombre">Nombre y apellido</label>
+            <input id="nombre" type="text" placeholder="Tu nombre">
+          </div>
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" type="email" placeholder="tucorreo@ejemplo.cl">
+          </div>
+          <div class="field">
+            <label for="tel">Teléfono / WhatsApp</label>
+            <input id="tel" type="tel" placeholder="+56 9 ...">
+          </div>
+          <div class="field">
+            <label for="curso">Curso de interés</label>
+            <select id="curso">
+              <option>Fototerapia aplicada en TTM y DOF</option>
+              <option>Láser en terapia periodontal</option>
+              <option>Introducción a la fototerapia</option>
+              <option>Aún no lo sé, necesito orientación</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="msg">Mensaje (opcional)</label>
+            <textarea id="msg" placeholder="Cuéntanos tu especialidad o tu duda"></textarea>
+          </div>
+          <button class="btn btn-grad" style="width:100%;text-align:center">Enviar consulta</button>
+          <p style="font-size:13px;color:var(--tinta-soft);margin-top:14px;text-align:center">Te responderemos a la brevedad con toda la información.</p>
+        </div>
+      </form>
+
+      <!-- INFO DE CONTACTO -->
+      <aside>
+        <div class="panel">
+          <h3>Otros canales</h3>
+          <ul class="contact-info" style="margin-top:6px">
+            <li><span class="ic">&raquo;</span><span><b>WhatsApp</b><a href="https://wa.me/56992183873" target="_blank" rel="noopener">+56 9 9218 3873</a></span></li>
+            <li><span class="ic">&raquo;</span><span><b>Correo</b><a href="mailto:contacto@medadvance.cl">contacto@medadvance.cl</a></span></li>
+            <li><span class="ic">&raquo;</span><span><b>Instagram</b><a href="https://www.instagram.com/medadvance" target="_blank" rel="noopener">@medadvance</a></span></li>
+            <li><span class="ic">&raquo;</span><span><b>Modalidad</b>Cursos presenciales en Santiago y online a tu ritmo</span></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html"><img src="assets/img/logo-light.png" alt="MEDadvance" class="foot-logo"></a>
+        <p style="margin-top:14px">Formación avanzada en fototerapia para profesionales de la salud, con evidencia y criterio clínico.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <a href="cursos.html">Cursos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="mailto:contacto@medadvance.cl">contacto@medadvance.cl</a>
+        <a href="https://www.instagram.com/medadvance" target="_blank" rel="noopener">Instagram</a>
+        <a href="contacto.html">Inscripciones</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> MED &raquo; ADVANCE · Fototerapia y láser clínico</span>
+      <span>Preparado por SmartGrowth</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
