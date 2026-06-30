@@ -155,8 +155,12 @@ section.alt{background:var(--nieve)}
 .badge{position:absolute;top:12px;left:12px;background:var(--grad);color:#fff;
   font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:5px 11px;border-radius:999px}
 .badge.full{background:linear-gradient(135deg,#5a6c8e,#27375c)}
-.curso .sin-cupos{font-weight:700;font-size:18px;color:var(--rojo);letter-spacing:.01em;display:inline-flex;align-items:center;gap:9px;text-align:left}
-.curso .sin-cupos::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--rojo);display:inline-block}
+/* cinta diagonal "sin cupos" en la esquina de la card */
+.curso.soldout .media{filter:saturate(.65) brightness(.92)}
+.ribbon-cupos{position:absolute;top:22px;right:-58px;z-index:6;transform:rotate(45deg);
+  background:linear-gradient(135deg,#F2A23C 0%,#E0451F 100%);color:#fff;
+  font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  padding:8px 64px;box-shadow:0 8px 18px -8px rgba(225,35,32,.6)}
 .curso.soon{opacity:1;border:1px dashed #c7cee0;background:var(--nieve)}
 .curso.soon .media{background:linear-gradient(150deg,#1a2b52,#101f42);opacity:.85}
 .curso.soon h3{color:var(--noche)}
